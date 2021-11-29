@@ -46,6 +46,10 @@
                   </div>
                 <p class="lead">A complete project boilerplate built with Bootstrap</p>
                 <p>Bootstrap v5.1.3</p>
+                {% include 'home.html' %}
+                {% block content %}
+                  {{ content_sports }}
+                {% endblock %}
             </div>
         </div>
         <!-- Bootstrap core JS-->
