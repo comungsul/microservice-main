@@ -2,12 +2,13 @@ version: '3.8'
 
 
 services:
+  web:
     image: app
     build: .
     command: bash -c "python3 app.py"
     ports:
-        - 5000:5000
+      - "5001:5001"
+    expose:
+      - "5001"
     environment:
-        PORT: 5000
-        FLASK_DEBUG: 1
-
+      FLASK_DEBUG: 1
