@@ -3,7 +3,7 @@ version: '3.7'
 
 services:
   web:
-    image: app
+    image: main-service
     build: .
     command: bash -c "python3 app.py"
     ports:

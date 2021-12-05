@@ -7,8 +7,6 @@ Computer Application Design MSA Project at Korea Polytechnic University
 
 ## Prerequisites
 
-
-
 ## Installation
 
 
