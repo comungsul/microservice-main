@@ -11,7 +11,7 @@ client = GraphQLClient("http://ec2-3-35-53-128.ap-northeast-2.compute.amazonaws.
 def index():
     get_sport = get_sports()
     get_blog = get_personal_blog()
-    
+    epl_rank_url = "http://ec2-3-35-133-179.ap-northeast-2.compute.amazonaws.com:8001/"
     result = ""
     if request.method == 'POST':
         query = '''
@@ -46,7 +46,8 @@ def index():
             main_name='컴홍설',
             content_sports=get_sport,
             content_blog=get_blog,
-            tool_value=result)
+            tool_value=result,
+            epl_rank_url=epl_rank_url)
 
 
 if __name__ == '__main__':
