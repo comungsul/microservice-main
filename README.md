@@ -2,6 +2,14 @@
 
 컴퓨터 응용 설계 마이크로서비스 아키텍쳐 설계  과제 
 
+구현자 홍성민
+
+기타 서브 웹 서비스 및 API 연동 및 AWS EC2 배포 및 스웜 연동 및 HealthCheck 개발
+
+구현 도움: 한상우, 배준일
+
+스웜 연동 중 발생하는 이슈 확인 및 동적 자원 할당을 위한 컨테이너 구축
+
 Computer Application Design MSA Project at Korea Polytechnic University
 
 ## 사용자 서비스 및 운영 층 모듈 설명
