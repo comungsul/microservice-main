@@ -2,6 +2,8 @@
 
 컴퓨터 응용 설계 마이크로서비스 아키텍쳐 설계  과제 
 
+구현자 홍성민 
+
 Computer Application Design MSA Project at Korea Polytechnic University
 
 ## 사용자 서비스 및 운영 층 모듈 설명
