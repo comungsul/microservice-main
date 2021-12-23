@@ -5,13 +5,15 @@ from src.graphql import GraphQLClient
 import json
 
 app = Flask(__name__)
-client = GraphQLClient("http://ec2-3-35-53-128.ap-northeast-2.compute.amazonaws.com:8000/graphql")
+client = GraphQLClient("http://ec2-3-34-48-86.ap-northeast-2.compute.amazonaws.com:8000/graphql")
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     get_sport = get_sports()
     get_blog = get_personal_blog()
-    epl_rank_url = "http://ec2-3-35-133-179.ap-northeast-2.compute.amazonaws.com:8001/"
+    epl_rank_url = "http://ec2-3-34-48-86.ap-northeast-2.compute.amazonaws.com:8001/"
+    scheduler = "http://ec2-3-34-48-86.ap-northeast-2.compute.amazonaws.com:8004/"
+    shopping = "http://ec2-3-34-48-86.ap-northeast-2.compute.amazonaws.com:8002/goods/list"
     result = ""
     if request.method == 'POST':
         query = '''
@@ -47,9 +49,11 @@ def index():
             content_sports=get_sport,
             content_blog=get_blog,
             tool_value=result,
-            epl_rank_url=epl_rank_url)
+            epl_rank_url=epl_rank_url,
+            scheduler=scheduler,
+            shopping=shopping)
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5002)
+    app.run(debug=True, host='0.0.0.0', port=5001)
     

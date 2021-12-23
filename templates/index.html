@@ -79,36 +79,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">오늘의 날씨</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">자세한 날씨</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">오늘의 장터</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">쇼핑몰 가기</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">오늘의 블로그</h5>
-                                <p class="card-text">
-                                    {{ content_blog['personal-blog'] }}
-                                </p>
-                                <a href="#" class="btn btn-primary">블로그 보기</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
+	  	    <div class="col">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">EPL 순위 정보</h5>
@@ -126,7 +97,26 @@
                             </div>
                         </div>
                     </div>
-                  </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">일정관리 앱</h5>
+				<a href={{ scheduler }} class="btn btn-primary">앱 사용하기</a>
+                            </div>
+                        </div>
+                    </div>
+		     <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">오늘의 장터</h5>
+                                <p class="card-text">스파르타 장터로 떠납니다.</p>
+				<a href={{ shopping }} class="btn btn-primary">쇼핑몰 가기</a>
+                            </div>
+                        </div>
+                    </div>
+
+                                      </div>
             </div>
         </div>
         <!-- Bootstrap core JS-->

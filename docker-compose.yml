@@ -1,14 +1,28 @@
 version: '3.7'
 
+networks:
+  web:
+    external: 
+      name: mon_net
 
 services:
   web:
-    image: main-service
+    networks:
+      - web
+    image: seanhong2000/main-service
     build: .
     command: bash -c "python3 app.py"
     ports:
-      - "5001:5001"
-    expose:
-      - "5001"
+      - "80:5001"
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
     environment:
       FLASK_DEBUG: 1
+
+
+      # networks:
+      #   net:
+      #     external: true
