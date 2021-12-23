@@ -2,7 +2,9 @@
 
 컴퓨터 응용 설계 마이크로서비스 아키텍쳐 설계  과제 
 
-구현자 홍성민 
+구현자 홍성민
+
+기타 서브 웹 서비스 및 API 연동 및 AWS EC2 배포 및 스웜 연동 및 HealthCheck 개발
 
 Computer Application Design MSA Project at Korea Polytechnic University
 
